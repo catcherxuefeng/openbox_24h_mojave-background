@@ -8,13 +8,13 @@ cat Shells/mojave-background.sh
 H_DATE=`date "+%H"`
 PIC=/home/catcher/Pictures/mojave-background
 
-ARY15=(0 1 2)
-ARY16=(3 4 5)
-ARY1=(5)
-ARY2=(6)
-ARY3=(7)
-ARY4=(8)
-ARY5=(9)
+ARY15=(00 01 02)
+ARY16=(03 04)
+ARY1=(05)
+ARY2=(06)
+ARY3=(07)
+ARY4=(08)
+ARY5=(09)
 ARY6=(10)
 ARY7=(11 12)
 ARY8=(13)
