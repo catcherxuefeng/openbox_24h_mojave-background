@@ -1,7 +1,7 @@
 ## Download and unzip Mojave dynamic background 
 > here: https://files.rb.gd/mojave_dynamic.zip 
-and rename 1-16.jpeg 
-## Mojave-background.sh
+and rename them to 1-16.jpeg 
+## Create a Mojave-background.sh 
 ```bash
 cat Shells/mojave-background.sh 
 #!/bin/bash
@@ -97,15 +97,12 @@ exit 0
 ## openbox autostart
 cat .config/openbox/autostart
 ```bash
-# mojave-background.sh 
-bash /home/catcher/Shells/mojave-background.sh
-
 ## Restore Wallpaper
 sh $HOME/.fehbg
 ```
-## systemd-timer & systemd-service
+## Create a systemd-timer & systemd-service
 ```bash
-cat .config/systemd/user/mojave-background.timer 
+systemctl --user cat mojave-background.timer 
 [Unit]
 Description=每小时更换一次壁纸
 
@@ -116,6 +113,7 @@ Unit=mojave-background.service
 [Install]
 WantedBy=timers.target
 
+systemctl --user cat mojave-background.service
 [Unit]
 Description=每小时更换一次壁纸
 
